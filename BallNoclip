@@ -1,0 +1,20 @@
+-- Z to enable
+-- X to disable
+
+local Work = game.Workspace
+local Boll = Work.playerModels.YOURNICKNAMEHERE.ball
+
+game:GetService("UserInputService").InputBegan:connect(function(ZZ)
+ if ZZ.KeyCode == Enum.KeyCode.Z then do
+   Boll.CanCollide = false
+  end
+ end
+end)
+
+
+game:GetService("UserInputService").InputBegan:connect(function(XX)
+ if XX.KeyCode == Enum.KeyCode.X then do
+   Boll.CanCollide = true
+  end
+ end
+end)
