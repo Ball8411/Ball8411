@@ -1,0 +1,18 @@
+-- F to freeze ball and unfreeze
+
+local Work = game.Workspace
+local Boll = Work.playerModels.OQQOQQOOQQOQQQQOOQOQ.ball
+
+game:GetService("UserInputService").InputBegan:connect(function(FF)
+ if FF.KeyCode == Enum.KeyCode.F then do
+   Boll.Anchored = true
+  end
+ end
+end)
+
+game:GetService("UserInputService").InputEnded:connect(function(FF)
+ if FF.KeyCode == Enum.KeyCode.F then do
+   Boll.Anchored = false
+  end
+ end
+end)
