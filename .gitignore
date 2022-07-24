@@ -1,41 +1,21 @@
-# Compiled Lua sources
-luac.out
+-- Press I to activate mod
+-- Respawn to deactive mod
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+local Work = game.Workspace
+local Boll = Work.playerModels.OQQOQQOOQQOQQQQOOQOQ.ball
+local Oxe = Work.playerModels.OQQOQQOOQQOQQQQOOQOQ.axe
+local OxeHandle = Oxe.handle
+local OxeHitbox = Oxe.hitHitbox
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
+game:GetService("UserInputService").InputBegan:connect(function(II)
+ if II.KeyCode == Enum.KeyCode.I then do
+   Oxe.CanCollide = false
+   Oxe.Transparency = 1
+   OxeHitbox.Transparency = 1
+   OxeHitbox.CanCollide = false
+   OxeHandle.Transparency = 0
+   OxeHandle.CanCollide = true
+   OxeHandle.Size = Vector3.new(0.5, 5 ,0.5)
+  end
+ end
+end)
