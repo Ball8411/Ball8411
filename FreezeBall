@@ -1,7 +1,7 @@
 -- F to freeze ball and unfreeze
 
 local Work = game.Workspace
-local Boll = Work.playerModels.YOURNAMEHERE.ball
+local Boll = Work.playerModels.YOURNICKNAMEHERE.ball
 
 game:GetService("UserInputService").InputBegan:connect(function(FF)
  if FF.KeyCode == Enum.KeyCode.F then do
