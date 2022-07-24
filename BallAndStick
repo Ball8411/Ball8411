@@ -1,8 +1,8 @@
 -- Press I to activate
 
 local Work = game.Workspace
-local Boll = Work.playerModels.OQQOQQOOQQOQQQQOOQOQ.ball
-local Oxe = Work.playerModels.OQQOQQOOQQOQQQQOOQOQ.axe
+local Boll = Work.playerModels.YOURNICKNAMEHERE.ball
+local Oxe = Work.playerModels.YOURNICKNAMEHERE.axe
 local OxeHandle = Oxe.handle
 local OxeHitbox = Oxe.hitHitbox
 
